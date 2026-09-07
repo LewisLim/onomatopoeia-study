@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { newDeck, buildOptions, wordById } from '../quiz.js'
-import { CATEGORIES } from '../data/words.js'
 import { Scene } from '../art/scenes.jsx'
 import { playCorrect, playWrong } from '../audio.js'
 
@@ -15,7 +14,6 @@ export default function QuizScreen({ onQuit }) {
   const [firstTry, setFirstTry] = useState(0)
 
   const word = wordById(deck[pos])
-  const category = CATEGORIES[word.category]
 
   function advance() {
     let nextDeck = deck
@@ -103,9 +101,6 @@ export default function QuizScreen({ onQuit }) {
             <span className="romaji">{word.romaji}</span>
           </div>
           <p className="reveal-meaning">{word.meaning}</p>
-          <p className="reveal-category">
-            {category.jp} · {category.en}
-          </p>
           <button className="btn btn-primary" onClick={advance} autoFocus>
             <span className="jp">次へ</span>
             <span className="en">Next</span>

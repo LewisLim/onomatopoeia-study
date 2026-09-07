@@ -351,14 +351,8 @@
 }
 
 .reveal-meaning {
-  margin: 0;
-  font-size: 16px;
-}
-
-.reveal-category {
   margin: 0 0 6px;
-  font-size: 12px;
-  color: var(--ink-soft);
+  font-size: 16px;
 }
 
 /* ── End screen ────────────────────────────────────────────────────── */

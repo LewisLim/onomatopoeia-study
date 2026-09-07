@@ -16,6 +16,7 @@ timer, score, or penalty.
   (base figures, effect overlays, props) — no image assets. Feedback tones
   are synthesized with Web Audio (no audio files).
 
+Demo Link: https://lewislim.github.io/onomatopoeia-study/
 
 <img width="400" height="674" alt="ezgif-8568a7e9fe8dda55" src="https://github.com/user-attachments/assets/339af3e4-b92b-45fb-8269-0402db409087" />
 
